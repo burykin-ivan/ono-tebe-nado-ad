@@ -12,20 +12,17 @@
     list-style-type: circle;
     padding-left: 20px;
 }
-
 .header__links-list-item_no-bullit
 {
     list-style-type: none;
     padding-left: 0;
 }
-
 .header__link
 {
     text-decoration: underline;
     font-size: 18px;
     line-height: 1.2;
 }
-
 .header__link_active
 {
     text-decoration: none;
@@ -37,7 +34,6 @@
     font-size: 18px;
     line-height: 24px;
 }
-
 .header__address
 {
     justify-self: end;
@@ -46,7 +42,6 @@
     flex-direction: column;
     align-items: flex-start;
 }
-
 .header__address a
 {
     text-decoration: none;
@@ -57,10 +52,96 @@
     display: block;
     width: 148px;
 }
-
 .header__logo-image
 {
     display: block;
     width: 100%;
     height: auto;
+}
+
+.cover
+{
+    position: relative;
+    min-height: 757px;
+    background-image: url("../images/cover.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 165px 50px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.overlay
+{
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.cover__title, .cover__description
+{
+    position: relative;
+    z-index: 2;
+}
+
+.cover__title
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #fff;
+    font-size: 100px;
+    font-weight: bold;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+}
+
+.aligned-text
+{
+    display: block;
+}
+
+.aligned-text_left
+{
+    align-self: flex-start;
+}
+
+.aligned-text_center
+{
+    align-self: center;
+}
+
+.aligned-text_right
+{
+    align-self: flex-end;
+}
+
+.cover__description
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cover__description-text
+{
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    word-spacing: 18px;
+}
+
+.cover__button
+{
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 12px 32px;
+    cursor: pointer;
 }
